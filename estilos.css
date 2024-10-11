@@ -6,7 +6,6 @@ body {
     background-color: #d4f1be; /* Fondo verde pastel */
     color: #333;
 }
-
 /* Estilos del header */
 header {
     background-color: #4caf50;
@@ -14,10 +13,6 @@ header {
     padding: 20px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
 }
 
 .header-container {
@@ -28,15 +23,13 @@ header {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
 }
 
 /* Estilos del logo de la izquierda */
 .logo-left {
-    height: 60px;
+    height: 50px;
     width: auto;
-    position: absolute;
-    left: 20px;
-    border-radius: 50px;
 }
 
 /* Estilos del h1 (centrado) */
@@ -44,14 +37,32 @@ header h1 {
     margin: 0;
     font-size: 1.8rem;
     flex-grow: 1;
+    text-align: center;
 }
 
 /* Estilos del logo de la derecha */
 .logo-right {
-    height: 70px;
+    height: 40px;
     width: auto;
-    position: absolute;
-    right: 20px;
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .header-container {
+        justify-content: center; /* Centra los elementos en pantallas pequeñas */
+    }
+
+    .logo-left, .logo-right {
+        height: 40px; /* Reduce el tamaño de los logos en pantallas pequeñas */
+    }
+
+    header h1 {
+        font-size: 1.4rem; /* Reduce el tamaño del texto en pantallas pequeñas */
+    }
+
+    .logo-left, .logo-right {
+        margin-bottom: 10px; /* Añade espacio debajo de los logos en pantallas pequeñas */
+    }
 }
 
 /* Estilos de la biblioteca */
