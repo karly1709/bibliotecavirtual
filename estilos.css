@@ -33,7 +33,7 @@ header {
 /* Estilos del logo de la izquierda */
 .logo-left {
     height: 60px;
-    width: 60px;
+    width: auto;
     position: absolute;
     left: 20px;
     border-radius: 50px;
@@ -49,7 +49,7 @@ header h1 {
 /* Estilos del logo de la derecha */
 .logo-right {
     height: 70px;
-    width: 60px;
+    width: auto;
     position: absolute;
     right: 20px;
 }
