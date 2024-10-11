@@ -1,0 +1,117 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d4f1be; /* Fondo verde pastel */
+    color: #333;
+}
+
+/* Estilos del header */
+header {
+    background-color: #4caf50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilos del logo de la izquierda */
+.logo-left {
+    height: 50px;
+    width: auto;
+    position: absolute;
+    left: 20px;
+}
+
+/* Estilos del h1 (centrado) */
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    flex-grow: 1;
+}
+
+/* Estilos del logo de la derecha */
+.logo-right {
+    height: 40px;
+    width: auto;
+    position: absolute;
+    right: 20px;
+}
+
+/* Estilos de la biblioteca */
+main {
+    padding: 40px 20px;
+    text-align: center;
+    margin-bottom: 80px; /* Espacio adicional para separar del footer */
+}
+
+.library {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Columnas automáticas */
+    gap: 20px;
+}
+
+/* Estilos de las tarjetas de los libros */
+.book {
+    background-color: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.book:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para las imágenes de los libros */
+.book img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    max-width: 150px; /* Limita el tamaño de la imagen */
+}
+
+/* Títulos de los libros (encima de la imagen) */
+.book p {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #4caf50;
+    font-size: 1rem;
+}
+
+/* Pie de página */
+footer {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 40px; /* Espacio adicional para separar del contenido */
+}
