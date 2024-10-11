@@ -32,10 +32,11 @@ header {
 
 /* Estilos del logo de la izquierda */
 .logo-left {
-    height: 50px;
-    width: auto;
+    height: 60px;
+    width: 60px;
     position: absolute;
     left: 20px;
+    border-radius: 50px;
 }
 
 /* Estilos del h1 (centrado) */
@@ -47,8 +48,8 @@ header h1 {
 
 /* Estilos del logo de la derecha */
 .logo-right {
-    height: 40px;
-    width: auto;
+    height: 70px;
+    width: 60px;
     position: absolute;
     right: 20px;
 }
